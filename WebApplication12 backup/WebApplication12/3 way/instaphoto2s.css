@@ -1,0 +1,225 @@
+﻿#Bigbox
+{
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #525252;
+	width: 610px;
+	box-shadow: inset 0px 0px 1px #FFFFCC;
+	text-decoration: none;
+	color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+#imagebox
+{
+	height: auto;
+	width: 650px;
+	overflow: hidden;
+	cursor: hover;
+	
+}
+ .image_holder
+{
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	float: left;
+	border: 1px solid #e1e2e4;
+	border-radius: 3px;
+}
+.image_holder:hover
+{
+  box-shadow: 0px 0px 3pt 2pt #3b5998;
+}
+.innerbox
+{
+	
+	background: white; 
+	border-radius: 3px;
+   	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial,Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	border: 1px solid #e1e2e4;
+}
+#comments
+{
+	background: white;
+	width: 610px;
+	padding: 20px;
+	margin: 0 auto;
+	
+    color: black;
+}
+.line
+{
+	       border : 0;
+       height : 2px;
+       background: #e2e2e2 ;
+       margin : 1em 0;
+}
+.text
+{
+	outline: none;
+	width: 490px;
+padding: 6px 4px;
+border: 1px solid #e1e1e1;
+margin: 0;
+height: 36px;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+@keyframes myfirst12as
+{
+	from {
+		box-shadow:0 0 5px #7bc1f7;
+	}
+	to {
+		box-shadow:0 0 10px #7bc1f7;
+	}
+}
+
+@-moz-keyframes myfirst12as /* Firefox */
+{
+	from {
+		box-shadow:0 0 5px #7bc1f7;
+	}
+	to {
+		box-shadow:0 0 10px #7bc1f7;
+	}
+}
+
+@-webkit-keyframes myfirst12as /* Safari and Chrome */
+{
+	from {
+		box-shadow:0 0 5px #7bc1f7;
+	}
+	to {
+		box-shadow:0 0 10px #7bc1f7;
+	}
+}
+
+@-o-keyframes myfirst12as /* Opera */
+{
+	from {
+		box-shadow:0 0 5px #7bc1f7;
+	}
+	to {
+		box-shadow:0 0 10px #7bc1f7;
+	}
+}
+.text:focus
+{
+	outline:none;
+    animation:myfirst12as 2s;
+	-moz-animation:myfirst12as 2s; /* Firefox */
+	-webkit-animation:myfirst12as 2s; /* Safari and Chrome */
+	-o-animation:myfirst12as 2s; /* Opera */
+	box-shadow:0 0 10px #7bc1f7;
+}
+.links_link
+{
+	cursor: pointer;
+	color: white;
+
+	text-decoration: none;
+}
+.links_link1
+{
+	cursor: pointer;
+	color: #8a9099;
+	text-decoration: none;
+}
+.links_link:hover
+{
+	color: #438bc5;
+	
+}
+.links_link1:hover
+{
+	color: #438bc5;
+}
+.button_cool1
+{
+	width: 30px;
+	height: 50px;
+	float: right;
+	margin: 0px;
+	border: 1px solid #2f5bb7;
+	background-color: #357ae8;
+	color: white;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 9pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+.button_cool1:hover
+{
+	
+	height: 50px;
+	float: right;
+	
+	border: 1px solid #2f5bb7;
+	background-color: #4d90fe;
+	color: white;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 9pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+
+
+#top_part
+{
+	width: 975px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	color: black;
+	background-color: white;
+	border: 1px solid #e6e6e6;
+}
+#top_part_coolner
+{
+	width: 940px;
+	margin: 0 auto;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 18pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 10px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	color: white;	
+}

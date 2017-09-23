@@ -1,0 +1,200 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="GAMER.Master.vb" Inherits="WebApplication12.Site2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 45px;
+        }
+        .style2
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            height: 23px;
+        }
+        .style4
+        {
+            height: 23px;
+            width: 248px;
+            margin-left: 40px;
+        }
+        .style5
+        {
+            color: #00FF00;
+        }
+        .style6
+        {
+            width: 65px;
+        }
+    </style>
+</head>
+<body bgcolor="Black">
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1" bgcolor="Gray">
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox1" runat="server" Width="206px"></asp:TextBox>
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton1" runat="server" 
+                        ImageUrl="~/Images/search.jpg" Width="148px" Height="20px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink1" Text="Customize" ForeColor="White" 
+                        runat="server" NavigateUrl="~/coustomize.aspx"></asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label1" ForeColor="White" runat="server" Text="Label"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LoginName ID="LoginName1" ForeColor="White" runat="server" />
+                &nbsp;&nbsp;&nbsp;
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                </td>
+            </tr>
+        </table>
+        <table class="style2">
+            <tr>
+                <td class="style4">
+                    <asp:Label ID="Label2" ForeColor="white" runat="server" Text="Label"></asp:Label>
+                    <br />
+                    <br />
+                    <asp:Image ID="Image1" runat="server" Height="169px" />
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" ForeColor="White" Text="Change Profile Picture" 
+                        runat="server"></asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="Blue" 
+                        NavigateUrl="~/Multiplayer.aspx">Range</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink6" runat="server" ForeColor="Blue">Photo Booth</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="Blue">Gameplay videos</asp:HyperLink>
+                    <br />
+                    <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="Blue">Friends</asp:HyperLink>
+                    <br />
+                    <span class="style5">_______________________________<br />
+                    Friends<br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    </span>
+                    <table class="style2">
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label3" ForeColor="White" runat="server" Text="Label" 
+                                    Visible="False"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image2" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label4" ForeColor="White" runat="server" Text="Label" 
+                                    Visible="False"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image3" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label5" ForeColor="White" runat="server" Text="Label"
+                                    Visible="false"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image4" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label6" ForeColor="White" runat="server" Text="Label"
+                                    Visible="false"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image5" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label7" ForeColor="White" runat="server" Text="Label"
+                                    Visible="false"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image6" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label8" ForeColor="White" runat="server" Text="Label"
+                                    Visible="false"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image7" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label9" ForeColor="White" runat="server" Text="Label"
+                                    Visible="false"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image8" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label10" ForeColor="White" runat="server" Text="Label"
+                                    Visible="false"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image10" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label11" ForeColor="White" runat="server" Text="Label"
+                                    Visible="false"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image11" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style6">
+                                <asp:Label ID="Label12" ForeColor="White" runat="server" Text="Label"
+                                    Visible="false"></asp:Label>
+                            </td>
+                            <td>
+                                <asp:Image ID="Image12" runat="server" Height="121px" Width="121px" Visible="false" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="style3">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{6D0FB41B-3591-41B9-B680-2DBF5446AF92}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebApplication12</RootNamespace>
+    <AssemblyName>WebApplication12</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebApplication12.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebApplication12.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60501\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXSSLibrary">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60501\lib\40\SanitizerProviders\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60501\lib\40\SanitizerProviders\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60501\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2 way\custumize2.aspx" />
+    <Content Include="2 way\WebForm14.aspx" />
+    <Content Include="3 way\apples.css" />
+    <Content Include="3 way\apples1.css" />
+    <Content Include="3 way\apples11.css" />
+    <Content Include="3 way\apples_for_games.css" />
+    <Content Include="3 way\apples_fo_images.css" />
+    <Content Include="3 way\apples_messages.css" />
+    <Content Include="3 way\apples_publicgrid.css" />
+    <Content Include="3 way\apples_range.css" />
+    <Content Include="3 way\apples_shower_one.css" />
+    <Content Include="3 way\custiomize page.aspx" />
+    <Content Include="3 way\error_page.aspx" />
+    <Content Include="3 way\First time sign up\theme.css" />
+    <Content Include="3 way\First time sign up\theme2.css" />
+    <Content Include="3 way\First time sign up\theme3.css" />
+    <Content Include="3 way\First time sign up\theme4.css" />
+    <Content Include="3 way\First time sign up\theme5.css" />
+    <Content Include="3 way\First time sign up\WebForm18.aspx" />
+    <Content Include="3 way\First time sign up\WebForm19.aspx" />
+    <Content Include="3 way\First time sign up\WebForm20.aspx" />
+    <Content Include="3 way\First time sign up\WebForm21.aspx" />
+    <Content Include="3 way\First time sign up\WebForm22.aspx" />
+    <Content Include="3 way\game.ico" />
+    <Content Include="3 way\gamechooser.aspx" />
+    <Content Include="3 way\gameshack2.aspx" />
+    <Content Include="3 way\global1.css" />
+    <Content Include="3 way\Grid.ico" />
+    <Content Include="3 way\images_icon.ico" />
+    <Content Include="3 way\Image_grid.aspx" />
+    <Content Include="3 way\instaphoto1.css" />
+    <Content Include="3 way\instaphoto2s.css" />
+    <Content Include="3 way\Message_Room.aspx" />
+    <Content Include="3 way\Profilecss.css" />
+    <Content Include="3 way\PublicGrid.aspx" />
+    <Content Include="3 way\Range.aspx" />
+    <Content Include="3 way\rangesheet.css" />
+    <Content Include="3 way\Search area.aspx" />
+    <Content Include="3 way\shower_topic.aspx" />
+    <Content Include="3 way\Site4.Master" />
+    <Content Include="3 way\slides.min.jquery.js" />
+    <Content Include="3 way\style.css" />
+    <Content Include="3 way\style1.css" />
+    <Content Include="3 way\apples_taber.css" />
+    <Content Include="3 way\taber_local.aspx" />
+    <Content Include="3 way\theme.css" />
+    <Content Include="3 way\theme12.css" />
+    <Content Include="3 way\theme2.css" />
+    <Content Include="3 way\theme3asdf.css" />
+    <Content Include="3 way\theme5.css" />
+    <Content Include="3 way\theme6.css" />
+    <Content Include="3 way\WebForm23.aspx" />
+    <Content Include="3 way\WebForm24.aspx" />
+    <Content Include="3 way\WebForm27.aspx" />
+    <Content Include="3 way\WebForm28.aspx" />
+    <Content Include="3 way\WebForm29.aspx" />
+    <Content Include="3 way\Photobooth.aspx" />
+    <Content Include="3 way\Frienwind.aspx" />
+    <Content Include="3 way\GameShack1.aspx" />
+    <Content Include="3 way\WebForm33.aspx" />
+    <Content Include="3 way\GamerShack.aspx" />
+    <Content Include="3 way\WebForm37.aspx" />
+    <Content Include="3 way\test.aspx" />
+    <Content Include="3 way\GamerGrid.aspx" />
+    <Content Include="3 way\WebForm41.aspx" />
+    <Content Include="3 way\Window.aspx" />
+    <Content Include="3 way\WebService1.asmx" />
+    <Content Include="3 way\Window.ico" />
+    <Content Include="3 way\Window1.aspx" />
+    <Content Include="3 way\windowsheet1.css" />
+    <Content Include="3 way\windowsheet2.css" />
+    <Content Include="3 way\Window_combined.aspx" />
+    <Content Include="3 way\window_new_Style.aspx" />
+    <Content Include="About.aspx" />
+    <Content Include="apples_frontpage.css" />
+    <Content Include="App_Data\ASPNETDB.MDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\aspnetdb_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="controls\WebUserControl1.ascx" />
+    <Content Include="Images\01234567890.jpg" />
+    <Content Include="Images\123456.jpg" />
+    <Content Include="Images\300px-Five_Zombie_Map_Select_Menu_Picture[1].jpg" />
+    <Content Include="Images\4567.jpg" />
+    <Content Include="Images\678.jpg" />
+    <Content Include="Images\67890.jpg" />
+    <Content Include="Images\about.jpg" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\backgroundasdf.png" />
+    <Content Include="Images\cancel.jpg" />
+    <Content Include="Images\collapse_blue.jpg" />
+    <Content Include="Images\continue.jpg" />
+    <Content Include="Images\createuser.jpg" />
+    <Content Include="Images\expand_blue.jpg" />
+    <Content Include="Images\jkl.jpg" />
+    <Content Include="Images\launch button.jpg" />
+    <Content Include="Images\likeanewbackground.jpg" />
+    <Content Include="Images\likeanewbackground.png" />
+    <Content Include="Images\log in button.jpg" />
+    <Content Include="Images\login 2.jpg" />
+    <Content Include="Images\login.jpg" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\logo1.jpg" />
+    <Content Include="Images\next button.jpg" />
+    <Content Include="Images\sadfg.jpg" />
+    <Content Include="Images\search.jpg" />
+    <Content Include="Images\submit.jpg" />
+    <Content Include="Images\Untitled-1.jpg" />
+    <Content Include="Images\Untitled-2.jpg" />
+    <Content Include="JavaScript1.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="aboutpage.aspx" />
+    <Content Include="loginpage.aspx" />
+    <Content Include="signuppage.aspx" />
+    <Content Include="forgot.aspx" />
+    <Content Include="Multiplayer.aspx" />
+    <Content Include="survival.aspx" />
+    <Content Include="Customize.aspx" />
+    <Content Include="credit.aspx" />
+    <Content Include="AMP.aspx" />
+    <Content Include="AMP app.aspx" />
+    <Content Include="WebForm26.aspx" />
+    <Content Include="WebForm34.aspx" />
+    <Content Include="WebForm40.aspx" />
+    <Content Include="Zombie.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="2 way\Site3.Master.designer.vb">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="2 way\Site3.Master.vb">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2 way\custumize2.aspx.designer.vb">
+      <DependentUpon>custumize2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2 way\custumize2.aspx.vb">
+      <DependentUpon>custumize2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="2 way\WebForm14.aspx.designer.vb">
+      <DependentUpon>WebForm14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2 way\WebForm14.aspx.vb">
+      <DependentUpon>WebForm14.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\error_page.aspx.designer.vb">
+      <DependentUpon>error_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\error_page.aspx.vb">
+      <DependentUpon>error_page.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm18.aspx.designer.vb">
+      <DependentUpon>WebForm18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm18.aspx.vb">
+      <DependentUpon>WebForm18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm19.aspx.designer.vb">
+      <DependentUpon>WebForm19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm19.aspx.vb">
+      <DependentUpon>WebForm19.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm20.aspx.designer.vb">
+      <DependentUpon>WebForm20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm20.aspx.vb">
+      <DependentUpon>WebForm20.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm21.aspx.designer.vb">
+      <DependentUpon>WebForm21.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm21.aspx.vb">
+      <DependentUpon>WebForm21.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm22.aspx.designer.vb">
+      <DependentUpon>WebForm22.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\First time sign up\WebForm22.aspx.vb">
+      <DependentUpon>WebForm22.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3 way\gamechooser.aspx.designer.vb">
+      <DependentUpon>gamechooser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\gamechooser.aspx.vb">
+      <DependentUpon>gamechooser.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\gameshack2.aspx.designer.vb">
+      <DependentUpon>gameshack2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\gameshack2.aspx.vb">
+      <DependentUpon>gameshack2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Image_grid.aspx.designer.vb">
+      <DependentUpon>Image_grid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Image_grid.aspx.vb">
+      <DependentUpon>Image_grid.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Message_Room.aspx.designer.vb">
+      <DependentUpon>Message_Room.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Message_Room.aspx.vb">
+      <DependentUpon>Message_Room.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\PublicGrid.aspx.designer.vb">
+      <DependentUpon>PublicGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\PublicGrid.aspx.vb">
+      <DependentUpon>PublicGrid.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Range.aspx.designer.vb">
+      <DependentUpon>Range.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Range.aspx.vb">
+      <DependentUpon>Range.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Search area.aspx.designer.vb">
+      <DependentUpon>Search area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Search area.aspx.vb">
+      <DependentUpon>Search area.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\shower_topic.aspx.designer.vb">
+      <DependentUpon>shower_topic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\shower_topic.aspx.vb">
+      <DependentUpon>shower_topic.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Site4.Master.designer.vb">
+      <DependentUpon>Site4.Master</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Site4.Master.vb">
+      <DependentUpon>Site4.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Site5.Master.designer.vb">
+      <DependentUpon>Site5.Master</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Site5.Master.vb">
+      <DependentUpon>Site5.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3 way\taber_local.aspx.designer.vb">
+      <DependentUpon>taber_local.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\taber_local.aspx.vb">
+      <DependentUpon>taber_local.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebForm15.aspx.designer.vb">
+      <DependentUpon>custiomize page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\WebForm15.aspx.vb">
+      <DependentUpon>custiomize page.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebForm23.aspx.designer.vb">
+      <DependentUpon>WebForm23.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\WebForm23.aspx.vb">
+      <DependentUpon>WebForm23.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebForm24.aspx.designer.vb">
+      <DependentUpon>WebForm24.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\WebForm24.aspx.vb">
+      <DependentUpon>WebForm24.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebForm27.aspx.designer.vb">
+      <DependentUpon>WebForm27.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\WebForm27.aspx.vb">
+      <DependentUpon>WebForm27.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebForm28.aspx.designer.vb">
+      <DependentUpon>WebForm28.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\WebForm28.aspx.vb">
+      <DependentUpon>WebForm28.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebForm29.aspx.designer.vb">
+      <DependentUpon>WebForm29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\WebForm29.aspx.vb">
+      <DependentUpon>WebForm29.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Photobooth.aspx.designer.vb">
+      <DependentUpon>Photobooth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Photobooth.aspx.vb">
+      <DependentUpon>Photobooth.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Frienwind.aspx.designer.vb">
+      <DependentUpon>Frienwind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Frienwind.aspx.vb">
+      <DependentUpon>Frienwind.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\GameShack1.aspx.designer.vb">
+      <DependentUpon>GameShack1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\GameShack1.aspx.vb">
+      <DependentUpon>GameShack1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebForm33.aspx.designer.vb">
+      <DependentUpon>WebForm33.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\WebForm33.aspx.vb">
+      <DependentUpon>WebForm33.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\GamerShack.aspx.designer.vb">
+      <DependentUpon>GamerShack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\GamerShack.aspx.vb">
+      <DependentUpon>GamerShack.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebForm37.aspx.designer.vb">
+      <DependentUpon>WebForm37.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\WebForm37.aspx.vb">
+      <DependentUpon>WebForm37.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\test.aspx.designer.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\test.aspx.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\GamerGrid.aspx.designer.vb">
+      <DependentUpon>GamerGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\GamerGrid.aspx.vb">
+      <DependentUpon>GamerGrid.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebForm41.aspx.designer.vb">
+      <DependentUpon>WebForm41.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\WebForm41.aspx.vb">
+      <DependentUpon>WebForm41.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Window.aspx.designer.vb">
+      <DependentUpon>Window.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Window.aspx.vb">
+      <DependentUpon>Window.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\WebService1.asmx.vb">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="3 way\Window1.aspx.designer.vb">
+      <DependentUpon>Window1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Window1.aspx.vb">
+      <DependentUpon>Window1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\Window_combined.aspx.designer.vb">
+      <DependentUpon>Window_combined.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\Window_combined.aspx.vb">
+      <DependentUpon>Window_combined.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="3 way\window_new_Style.aspx.designer.vb">
+      <DependentUpon>window_new_Style.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3 way\window_new_Style.aspx.vb">
+      <DependentUpon>window_new_Style.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="controls\WebUserControl1.ascx.designer.vb">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="controls\WebUserControl1.ascx.vb">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GAMER.Master.designer.vb">
+      <DependentUpon>GAMER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GAMER.Master.vb">
+      <DependentUpon>GAMER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="aboutpage.aspx.designer.vb">
+      <DependentUpon>aboutpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aboutpage.aspx.vb">
+      <DependentUpon>aboutpage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="loginpage.aspx.designer.vb">
+      <DependentUpon>loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginpage.aspx.vb">
+      <DependentUpon>loginpage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="signuppage.aspx.designer.vb">
+      <DependentUpon>signuppage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signuppage.aspx.vb">
+      <DependentUpon>signuppage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="forgot.aspx.designer.vb">
+      <DependentUpon>forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgot.aspx.vb">
+      <DependentUpon>forgot.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Multiplayer.aspx.designer.vb">
+      <DependentUpon>Multiplayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Multiplayer.aspx.vb">
+      <DependentUpon>Multiplayer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="survival.aspx.designer.vb">
+      <DependentUpon>survival.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="survival.aspx.vb">
+      <DependentUpon>survival.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Customize.aspx.designer.vb">
+      <DependentUpon>Customize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize.aspx.vb">
+      <DependentUpon>Customize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AMP.aspx.designer.vb">
+      <DependentUpon>AMP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMP.aspx.vb">
+      <DependentUpon>AMP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm11.aspx.designer.vb">
+      <DependentUpon>credit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm11.aspx.vb">
+      <DependentUpon>credit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AMP app.aspx.designer.vb">
+      <DependentUpon>AMP app.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AMP app.aspx.vb">
+      <DependentUpon>AMP app.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm26.aspx.designer.vb">
+      <DependentUpon>WebForm26.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm26.aspx.vb">
+      <DependentUpon>WebForm26.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm34.aspx.designer.vb">
+      <DependentUpon>WebForm34.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm34.aspx.vb">
+      <DependentUpon>WebForm34.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm40.aspx.designer.vb">
+      <DependentUpon>WebForm40.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm40.aspx.vb">
+      <DependentUpon>WebForm40.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Zombie.aspx.designer.vb">
+      <DependentUpon>Zombie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Zombie.aspx.vb">
+      <DependentUpon>Zombie.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2 way\Site3.Master" />
+    <Content Include="3 way\Site5.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site1.Master" />
+    <Content Include="GAMER.Master" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Account\" />
+    <Folder Include="imgs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57923</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,366 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site3.master.vb" Inherits="WebApplication12.Site3" %>
+
+<%@ Register src="../controls/WebUserControl1.ascx" tagname="WebUserControl1" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<style>
+    #btnsearch
+	{
+	    cursor:pointer;
+		font: Ariel;
+		font-weight: bold;
+		background-color: #FF6600;
+		color: white;
+		background: rgb(255,48,25); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,48,25,1)), color-stop(100%,rgba(207,4,4,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+
+
+	}
+	#btnsearch:hover
+	{
+		background: rgb(207,4,4); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(207,4,4,1) 0%, rgba(255,48,25,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(207,4,4,1)), color-stop(100%,rgba(255,48,25,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(207,4,4,1) 0%,rgba(255,48,25,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(207,4,4,1) 0%,rgba(255,48,25,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(207,4,4,1) 0%,rgba(255,48,25,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(207,4,4,1) 0%,rgba(255,48,25,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019',GradientType=0 ); /* IE6-9 */
+
+
+	}
+    #labelname
+    {
+        font-family: Arial;
+        font-size: 50px;
+    }
+    #Range_link
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #HyperLink2
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #games
+    {    
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #photos
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #video
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #id_container
+    {
+        float:right;
+        width: 820px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    #toolbox
+    {
+        text-align:left; 
+        margin: 0 auto; 
+        width:160px;
+        float:left;
+        opacity:0.6;
+        filter:alpha(opacity=60); /* For IE8 and earlier */
+    }
+    #contentholder
+    {
+        text-align:left; 
+        margin: 0 auto; 
+        width:820px;
+        float:right;
+    }
+    #cool
+    {
+        width="200px"
+    }
+    #contentcontainertoolbar
+    {
+        text-align:left;
+        width: 980px;
+        margin: 0 auto;
+    }
+    #ContentPlaceHolder1
+    {
+        text-align:left; 
+        margin-bottom: 50px; 
+        width:820px;
+    }
+    #contentcontainer
+    {
+        text-align:left; 
+        margin: 0 auto; 
+        width:980px;
+    }
+    .body
+    {
+        text-align:center;
+    }
+    #top_container
+    {
+        text-align:left; 
+        margin: 0 auto; 
+        width:980px;
+    }
+    .op
+    {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }       
+    .modalBackground 
+    {
+	    background-color:Gray;
+	    filter:alpha(opacity=70);
+	    opacity:0.7;
+    }
+    .txtbox
+    {   
+        margin-left:0px;
+        margin-bottom:0px;
+        margin-right:0px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .style1
+    {
+        width: 980px;
+        height: 54px;
+    }
+    .style2
+    {
+        width: 9px;
+    }
+    .style3
+    {
+        text-align: right;
+    }
+    .style4
+    {
+        width: 302px;
+    }
+    .style5
+    {
+        width: 235px;
+    }
+    .style6
+    {
+        color: #FFFFFF;
+    }
+    .style7
+    {
+        color: #33CCFF;
+    }
+    .style8
+    {
+        width: 74px;
+    }
+    </style>
+<script type="text/javascript">
+    function color(x) {
+        x.style.color = "orange";
+    }
+    function color2(x) {
+        x.style.color = "black";
+    }
+
+</script>
+<body bgcolor="black" id="body">
+    <form id="form1" runat="server">
+    <div>
+    <br />
+    <br />
+    <br />
+    </div>
+    <div>
+        <div id="top_container" text-align="left" > 
+            <table class="style1">
+                <tr>
+                    <td class="style5">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.jpg"  />
+                    </td>
+                    <td class="style4">
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="txtbox" Height="33px" bordercolor="#33CCFF"
+                width="305px"></asp:TextBox>
+                    </td>
+                    <td class="style8">
+                        <asp:button id="btnsearch" runat="server" style="width:120px;height:35px" text="Search"></asp:button>
+                    </td>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td class="style3">
+                        <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="#33CCFF">Customize</asp:HyperLink>
+                        <span class="style6">&nbsp;| </span><asp:HyperLink ID="HyperLink1" runat="server" ForeColor="#FF6600">HyperLink</asp:HyperLink>
+                        <span class="style6">&nbsp;|</span>
+                        <asp:LoginName ID="LoginName1" runat="server" ForeColor="#33CCFF" />
+                        &nbsp;<span class="style6">|</span>
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" ForeColor="#FF6600" />
+                    &nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<div id="contentcontainertoolbar">
+    <br />
+    <div id="toolbox">
+    <asp:Image ID="profile_pic" runat="server" Height="135px" Width="159px" />
+    <br />
+    <br />
+    <asp:Label ID="labeladsf" runat="server" forecolor="#33ccff" Font-Bold="true" Text="FName" />
+    <span class="style7"><strong>'s:</strong></span>
+    <br />
+    <br />
+    <asp:HyperLink ID="Range_link" runat="server" Text="Range"/>
+    <hr />
+    <asp:HyperLink ID="HyperLink2" runat="server">Info</asp:HyperLink>
+    <hr />
+    <asp:HyperLink ID="games" runat="server">Games shack</asp:HyperLink>
+    <hr />
+    <asp:HyperLink ID="photos" runat="server">Photo Gallary</asp:HyperLink>
+    <hr />
+    <asp:HyperLink ID="video" runat="server">Video Upload</asp:HyperLink>
+    <hr />
+    <br />
+    <br />
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label1" ForeColor="#33ccff" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label2" forecolor="#33CCFF" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label3" ForeColor="#33CCFF" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label4" ForeColor="#33CCFF" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label5" ForeColor="#33CCFF" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label6" ForeColor="#33CCFF" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label7" ForeColor="#33CCFF" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label8" ForeColor="#33CCFF" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label9" ForeColor="#33CCFF" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img alt="" src="" /></td>
+            <td>
+                &nbsp;
+                <asp:Label ID="Label10" ForeColor="#33CCFF" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+</div>
+<div id="id_container">
+    <br />
+    <asp:Label ID="labelname" runat="server" ForeColor="#33CCFF" />
+    <br />
+</div>
+<div id="contentholder">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</div>
+    
+</div>
+    </form>
+</body>
+</html>

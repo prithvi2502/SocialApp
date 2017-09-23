@@ -1,0 +1,125 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="WebApplication12.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> ClanView</title>
+    <link rel="shortcut icon" href="Images/logoclanview-20130120-favicon.ico" >
+    <script type ="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>    
+    <script type ="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="JavaScript1.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #banner
+        {
+            height: 80px;
+            background-color: #ff7d1a;
+            position:fixed;
+            right: 0; left:0; top: 0; display: block; z-index: 300;
+        }
+        #Title
+        {
+            float: left;
+            font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: White;
+            margin-top: 20px;
+        }
+        #banner_holder
+        {
+            width: 980px;
+            margin: 0 auto;
+            height: 80px;
+        } 
+        .textbox
+        {
+            width: 150px;
+            height: 20px;
+            padding: 6px 4px;
+            border: 1px solid #E1E1E1;
+        }
+        .button1
+        {
+            background: #7abcff; /* Old browsers */
+            background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+            border-width: 1px;   
+            height: 30px;
+            width: 50px;
+            border-radius: 2px;
+            cursor: pointer;
+            border-color: #C6C6C6;
+            border: 1px solid gainsboro;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        }
+        .button1:hover
+        {
+            background: #4096ee; /* Old browsers */
+            background: -moz-linear-gradient(top, #4096ee 0%, #60abf8 56%, #7abcff 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4096ee), color-stop(56%,#60abf8), color-stop(100%,#7abcff)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #4096ee 0%,#60abf8 56%,#7abcff 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #4096ee 0%,#60abf8 56%,#7abcff 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #4096ee 0%,#60abf8 56%,#7abcff 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #4096ee 0%,#60abf8 56%,#7abcff 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#7abcff',GradientType=0 ); /* IE6-9 */
+        }
+        .button1:active
+        {
+               -moz-box-shadow:    inset 0 0 10px #000000;
+               -webkit-box-shadow: inset 0 0 10px #000000;
+               box-shadow:         inset 0 0 10px #000000;
+        }
+        #links
+        {   
+            font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: White;
+            margin-right: -303px;
+            text-decoration: none;
+        } 
+    </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#form1").validate();
+            });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="banner">
+        <div id="banner_holder">
+            <div id="Title">
+                ClanView
+            </div>
+            <div id="log-in_holder" style="height: 80px; width: 700px; float: right;">
+                
+                <div id="links" style=" width: 300px; height:auto; margin-top: 60px; float: right;">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </form>
+   
+</body>
+</html>

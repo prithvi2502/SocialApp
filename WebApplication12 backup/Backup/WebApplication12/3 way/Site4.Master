@@ -1,0 +1,472 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site4.master.vb" Inherits="WebApplication12.Site4" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<style>
+    #btnsearch
+	{
+	    cursor:pointer;
+		font: Ariel;
+		font-weight: bold;
+		background-color: #FF6600;
+		color: white;
+		background: rgb(255,48,25); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,48,25,1)), color-stop(100%,rgba(207,4,4,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
+
+
+	}
+	#btnsearch:hover
+	{
+		background: rgb(207,4,4); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(207,4,4,1) 0%, rgba(255,48,25,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(207,4,4,1)), color-stop(100%,rgba(255,48,25,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(207,4,4,1) 0%,rgba(255,48,25,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(207,4,4,1) 0%,rgba(255,48,25,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(207,4,4,1) 0%,rgba(255,48,25,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(207,4,4,1) 0%,rgba(255,48,25,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cf0404', endColorstr='#ff3019',GradientType=0 ); /* IE6-9 */
+
+
+	}
+    #labelname
+    {
+        font-family: Arial;
+        font-size: 50px;
+    }
+    #Range_link
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #HyperLink2
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #games
+    {    
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #photos
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #video
+    {
+        text-decoration: none;
+        font-weight: bold;
+        color: #ff6600;
+        padding: 10px;
+        cursor: pointer;
+    }
+    #id_container
+    {
+        float:right;
+        width: 820px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    #toolbox
+    {
+        text-align:left; 
+        margin: 0 auto; 
+        width:160px;
+        float:left;
+        opacity:0.6;
+        filter:alpha(opacity=60); /* For IE8 and earlier */
+    }
+    #contentholder
+    {
+        text-align:left; 
+        margin: 0 auto; 
+        width:820px;
+        float:right;
+    }
+    #cool
+    {
+        width="200px"
+    }
+    #contentcontainertoolbar
+    {
+        text-align:left;
+        width: 980px;
+        height:inherit;
+        margin: 0 auto;
+    }
+    #ContentPlaceHolder1
+    {
+        text-align:left; 
+        margin-bottom: 50px; 
+        width:820px;
+    }
+    #contentcontainer
+    {
+        text-align:left; 
+        margin: 0 auto; 
+        width:980px;
+    }
+    #body
+    {
+        text-align:center;
+    }
+    #toolbar_top
+    {
+        text-align:left; 
+        margin: 0 auto; 
+        width:980px;
+        height: 131px;
+    }
+    #top_container
+    {
+        text-align:left; 
+        margin: 0 auto; 
+        width:980px;
+    }
+    .op
+    {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }       
+    .modalBackground 
+    {
+	    background-color:Gray;
+	    filter:alpha(opacity=70);
+	    opacity:0.7;
+    }
+    .txtbox
+    {   
+        margin-left:0px;
+        margin-bottom:0px;
+        margin-right:0px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .style1
+    {
+        width: 980px;
+        height: 54px;
+    }
+    .style2
+    {
+        width: 9px;
+    }
+    .style3
+    {
+        text-align: right;
+    }
+    .style4
+    {
+        width: 302px;
+    }
+    .style5
+    {
+        width: 235px;
+    }
+    .style6
+    {
+        color: #FFFFFF;
+    }
+    .style8
+    {
+        width: 74px;
+    }
+    #menubar, #menubar ul {
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+    }
+    #menubar {
+	    width: 980px;
+	    margin: 60px auto;
+	    border: 1px solid #222;
+	    background-color: #111;
+	    background-image: -webkit-linear-gradient(#444, #111);
+	    border-radius: 6px;
+	    box-shadow: 0 1px 1px #777;
+    }
+    #menubar:before,
+    #menubar:after {
+	    content: "";
+	    display: table;
+    }
+
+    #menubar:after {
+	    clear: both;
+    }
+
+    #menubar {
+	    zoom:1;
+    }
+    #menubar li {
+	    float: left;
+	    border-right: 1px solid #222;
+	    -webkit-box-shadow: 1px 0 0 #444;
+	    position: relative;
+	    cursor:pointer;
+    }
+
+    #menubar a {
+	    float: left;
+	    padding: 12px 30px;
+	    color: #999;
+	    text-transform: uppercase;
+	    font: bold 12px Arial, Helvetica;
+	    text-decoration: none;
+	    text-shadow: 0 1px 0 #000;
+    }
+
+    #menubar li:hover > a {
+	    color: #fafafa;
+    }
+
+    *html #menubar li a:hover { /* IE6 only */
+	    color: #fafafa;
+    }
+    #menubar ul 
+    {
+        height: 350px;
+	    margin: 20px 0 0 0;
+	    _margin: 0; /*IE6 only*/
+	    opacity: 0;
+	    visibility: hidden;
+	    position: absolute;
+	    top: 38px;
+	    left: 0;
+	    z-index: 1;    
+	    background: #444;	
+	    -webkit-background: -webkit-linear-gradient(#444, #111);
+	    box-shadow: 0 -1px 0 rgba(255,255,255,.3);	
+	    border-radius: 3px;
+	    -webkit-transition: all .2s ease-in-out;  
+    }
+
+    #menubar li:hover > ul {
+	    opacity: 1;
+	    visibility: visible;
+	    margin: 0;
+    }
+
+    #menubar ul ul {
+	    top: 0;
+	    left: 150px;
+	    margin: 0 0 0 20px;
+	    _margin: 0; /*IE6 only*/
+	    box-shadow: -1px 0 0 rgba(255,255,255,.3);		
+    }
+
+    #menubar ul li {
+	    float: none;
+	    display: block;
+	    border: 0;
+	    _line-height: 0; /*IE6 only*/
+	    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+    }
+
+    #menubar ul li:last-child {   
+	    box-shadow: none;    
+    }
+
+    #menubar ul a {    
+	    padding: 20px;
+	    width: 250px;
+	    color: #3CF;
+	    font: bold 25px Arial, Helvetica;
+	    _height: 25px; /*IE6 only*/
+	    display: block;
+	    white-space: nowrap;
+	    float: none;
+	    text-transform: none;
+    }
+
+    #menubar ul a:hover {
+	    background-color: #0186ba;
+	    -webkit-background-image: -webkit-linear-gradient(#04acec, #0186ba);
+    }#menubar ul li:first-child > a {
+	    border-radius: 3px 3px 0 0;
+    }
+
+    #menubar ul li:first-child > a:after {
+	    content: '';
+	    position: absolute;
+	    left: 40px;
+	    top: -6px;
+	    border-left: 6px solid transparent;
+	    border-right: 6px solid transparent;
+	    border-bottom: 6px solid #444;
+    }
+
+    #menubar ul ul li:first-child a:after {
+	    left: -6px;
+	    top: 50%;
+	    margin-top: -6px;
+	    border-left: 0;	
+	    border-bottom: 6px solid transparent;
+	    border-top: 6px solid transparent;
+	    border-right: 6px solid #3b3b3b;
+    }
+
+    #menubar ul li:first-child a:hover:after {
+	    border-bottom-color: #04acec; 
+    }
+
+    #menubar ul ul li:first-child a:hover:after {
+	    border-right-color: #0299d3; 
+	    border-bottom-color: transparent; 	
+    }
+
+    #menubar ul li:last-child > a {
+	    border-radius: 0 0 3px 3px;
+    }
+    #name {
+	    color: #33CCFF;
+	    margin: 0 0 0 20px;
+    }
+    #cool {
+    color: #3CF;
+    padding: 20px;
+    font: bold 25px Arial, Helvetica;
+    width: 250px;
+    }
+    .lead {
+    font: bold 17px Arial, Helvetica;
+    }
+    .nomtext {
+    font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #F60;
+    }
+    </style>
+<script type="text/javascript">
+    function color(x) {
+        x.style.color = "orange";
+    }
+    function color2(x) {
+        x.style.color = "black";
+    }
+
+</script>
+<body bgcolor="#0d0d0d" >
+    <form id="form1" runat="server">
+    <div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    </div>
+    <div>
+        <div id="top_container" text-align="left" > 
+            <table class="style1">
+                <tr>
+                    <td class="style5">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.jpg"  />
+                    </td>
+                    <td class="style4">
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="txtbox" Height="33px" bordercolor="#33CCFF"
+                width="305px"></asp:TextBox>
+                    </td>
+                    <td class="style8">
+                        <asp:button id="btnsearch" runat="server" style="width:120px;height:35px" text="Search"></asp:button>
+                    </td>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td class="style3">
+                        <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="#33CCFF">Customize</asp:HyperLink>
+                        <span class="style6">&nbsp;| </span><asp:HyperLink ID="HyperLink1" runat="server" ForeColor="#FF6600">HyperLink</asp:HyperLink>
+                        <span class="style6">&nbsp;|</span>
+                        <asp:LoginName ID="LoginName1" runat="server" ForeColor="#33CCFF" />
+                        &nbsp;<span class="style6">|</span>
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" ForeColor="#FF6600" />
+                    &nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="toolbar_top"  >
+    		<ul id="menubar">
+			<li><a herf="#">Public Place</a></li>
+			<li>
+					<a href="#">Basic Profile</a>
+					<ul>
+						<li><a href="#">Prith</a></li>
+						<div id="cool">
+							<img src="http://www.tizag.com/pics/htmlT/sunset.gif"/>
+							<br />
+							<hr>
+							<label class="lead">Full Name:</label>
+							<label class="nomtext">Prith Vishwakarma</label>
+							<br>
+							<label class="lead">Favorite Game:</label>
+							<label class="nomtext">Call of Duty</label>
+							<br>
+							<label class="lead">Date of Birth:</label>
+							<label class="nomtext">02/25/12</label>
+							<br>
+							<label class="lead">Hometown:</label>
+							<label class="nomtext">Rockville</label>
+						</div>
+					</ul>
+			</li>
+			<li><a href="#">Games Shack</a></li>
+			<li><a href="#"><label>Label</label>'s Range</a></li>
+			<li><a href="#">Clan</a></li>
+			<li><a href="#">Photo Booth</a></li>
+			<li><a href="#">Clanvid</a></li>
+		</ul>
+    </div>
+<div id="contentcontainertoolbar">
+    <br />
+    <div id="toolbox">
+    <br />
+    <br />
+    <br />
+    </div>
+<div id="id_container">
+    <br />
+    <asp:Label ID="labelname" runat="server" ForeColor="#33CCFF" />
+    <br />
+</div>
+<div id="contentholder">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</div>
+    
+</div>
+    </form>
+</body>
+</html>
+

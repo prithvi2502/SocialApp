@@ -1,0 +1,616 @@
+﻿
+#hrtag
+{
+	display: block; height: 1px;
+    border: 0; border-top: 1px solid #0080C0;
+    margin: 0 auto; padding: 0;
+    width: 200px;
+}
+#textbox_cool
+{
+	width: 230px;
+	padding: 6px 4px;
+	border: 1px solid #e1e1e1;
+	margin-top: 3px;
+}
+
+@keyframes myfirstqwa
+{
+	from {opacity: .8; }
+	to {opacity: 1;}
+}
+
+@-moz-keyframes myfirstqwa /* Firefox */
+{
+	from {opacity: .8; }
+	to {opacity: 1; }
+}
+
+@-webkit-keyframes myfirstqwa /* Safari and Chrome */
+{
+	from {opacity: .8; }
+	to {opacity: 1; }
+}
+
+@-o-keyframes myfirstqwa /* Opera */
+{
+	from {opacity: .8;}
+	to {opacity: 1; }
+}
+
+.tile {
+	border-radius: 3px;
+	display: block;
+	float: left;
+	width: 233px;
+	height: 233px;
+	border: 8px solid white;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+	text-decoration: none;
+	color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	opacity: .9;
+}
+.big_tile {
+	
+	display: block;
+	float: left;
+	background: white; border: 1px solid #e1e2e4;
+	width: 974px;
+	margin-left: 4px;
+
+	border-radius: 4px;
+	text-decoration: none;
+	color: black;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, 
+
+Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+}
+.tile:hover
+{
+	
+	   animation:myfirstqwa 1s;
+-moz-animation:myfirstqwa 1s; /* Firefox */
+-webkit-animation:myfirstqwa 1s; /* Safari and Chrome */
+-o-animation:myfirstqwa 1s; /* Opera */
+opacity:1;
+overflow: hidden;
+	width: 233px;
+	height: 233px;
+}
+.tagleft
+{
+	float: right;
+	margin-right: 10px;
+}
+.grid_tiltle
+{
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 16pt;
+	text-transform: lowercase;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 30px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	color: #24A0DA;
+}
+.grid_super
+{
+
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 26pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 30px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	color: #24A0DA;
+
+}
+.tile_search
+{
+	margin-left: 30px;
+	margin-top: 1px;
+	display: block;
+	float: left;
+	background-color: #525252;
+	width: inherit;
+	height: auto;
+	box-shadow: inset 0px 0px 1px #FFFFCC;
+	text-decoration: none;
+	color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 20px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+}
+.tile_search:hover
+{
+	outline: 1px solid #ff8c01;
+}
+.image_holder
+{
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	float: left;
+}
+#content
+{
+	
+	float: left;
+	padding-left: 10px;
+}
+.links_link
+{
+	float: left;
+	padding-left: 10px;
+	color: black;
+	padding-top: 7px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.links_link1
+{
+	color: black;
+	cursor: pointer;
+	text-decoration: none;
+}
+.links_link:hover
+{
+	color: #438bc5;
+}
+.links_link1:hover
+{
+	color: #438bc5;
+}
+#top_part
+{
+	width: 975px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	color: black;
+	background-color: white;
+	border: 1px solid #e6e6e6;
+}
+#top_part_coolner
+{
+	width: 940px;
+	margin: 0 auto;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 18pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 10px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	color: white;	
+}
+.button_cool
+{
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin: 5px;
+	border: 1px solid #2f5bb7;
+	background-color: #357ae8;
+	color: white;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 9pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+.button_cool:hover
+{
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin: 5px;
+	border: 1px solid #2f5bb7;
+	background-color: #4d90fe;
+	color: white;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 9pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+#imageholder
+{
+	padding: 20px;
+	width: 975px;
+	margin: 3px;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	color: white;
+}
+#Image1 {
+	border-radius: 3px;
+	display: block;
+	float: left;
+	width: 233px;
+	height: 233px;
+	border: 8px solid white;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+	text-decoration: none;
+	color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	opacity: .9;
+}
+#Image1:hover
+{
+	
+	   animation:myfirstqwa 1s;
+-moz-animation:myfirstqwa 1s; /* Firefox */
+-webkit-animation:myfirstqwa 1s; /* Safari and Chrome */
+-o-animation:myfirstqwa 1s; /* Opera */
+opacity:1;
+overflow: hidden;
+	width: 233px;
+	height: 233px;
+}
+#image_comments
+{
+	background-color: white;
+	border: 1px solid #e6e6e6;
+	padding: 20px;
+}
+
+
+.post_section
+{
+	width: 400px;
+	height: auto;
+	background-color: white;
+	border: 1px solid #e6e6e6;
+	clear: both;
+	height: inherit;
+	overflow: hidden;
+		font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 20px;
+}
+::-webkit-scrollbar-track:window-inactive 
+{
+   -webkit-box-shadow: none;
+}
+::-webkit-scrollbar              
+{ 
+    width: 12px;
+
+}
+::-webkit-scrollbar-track       
+ {    
+    -webkit-box-shadow: inset 0 0 6px  white; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb        
+{ 
+    background: 3b5998;
+    opacity: .1; 
+	
+
+}
+.post_section1
+{
+	width: 400px;
+	height: auto;
+	clear: both;
+	height: inherit;
+	overflow: hidden;
+		font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 20px;
+}
+#popup_game
+{
+    	background: white; border: 1px solid #e1e2e4;
+	padding: 20px;
+	border-radius: 3px;
+   	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial,Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	width: 350px;
+	height: 150px;
+	margin: 20px;
+}
+
+.button_cool_red
+{
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin: 5px;
+	border: 1px solid #b52f2f;
+	background-color: #e53434;
+	color: white;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 9pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+.button_cool_red:hover
+{
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin: 5px;
+	border: 1px solid #b52f2f;
+	background-color: #fc4e4e;
+	color: white;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 9pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+::-webkit-scrollbar-track:window-inactive 
+{
+   -webkit-box-shadow: none;
+}
+::-webkit-scrollbar              
+{ 
+    width: 12px;
+
+}
+::-webkit-scrollbar-track       
+ {    
+    background: white; 
+}
+::-webkit-scrollbar-thumb        
+{ 
+    opacity: .1; 
+    background: #4d84f9; /* Old browsers */
+
+}
+
+.button_cool_green
+{
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin: 5px;
+	border: 1px solid #40b22e;
+	background-color: #65e234;
+	color: white;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 9pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+.button_cool_green:hover
+{
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin: 5px;
+	border: 1px solid #40b22e;
+	background-color: #81f94d;
+	color: white;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 9pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+.textboxcool1
+{
+	width: 780px;
+	padding: 6px 4px;
+	border: none;
+	margin-top: 3px;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, 
+	Helvetica, sans-serif;
+	outline: none;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+.textboxcool1:focus
+{
+	outline:none;
+}
+.friends_box_underbox
+{
+	margin-bottom: 10px;
+	border: 4px transparent solid;
+	padding: 10px;
+	width: 300px;
+	position: relative;
+	height: 62px;
+	display: block;
+	clear: both;
+	cursor: pointer;
+}
+.friends_box_underbox:hover
+{
+	outline: 4px solid #2d89ef;
+}
+.textboxcool
+{
+	width: 300px;
+	padding: 6px 4px;
+	border: 1px solid #e1e1e1;
+	margin-top: 3px;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, 
+
+Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+@keyframes myfirst12as
+{
+	from {
+		box-shadow:0 0 5px #7bc1f7;
+	}
+	to {
+		box-shadow:0 0 10px #7bc1f7;
+	}
+}
+
+@-moz-keyframes myfirst12as /* Firefox */
+{
+	from {
+		box-shadow:0 0 5px #7bc1f7;
+	}
+	to {
+		box-shadow:0 0 10px #7bc1f7;
+	}
+}
+
+@-webkit-keyframes myfirst12as /* Safari and Chrome */
+{
+	from {
+		box-shadow:0 0 5px #7bc1f7;
+	}
+	to {
+		box-shadow:0 0 10px #7bc1f7;
+	}
+}
+
+@-o-keyframes myfirst12as /* Opera */
+{
+	from {
+		box-shadow:0 0 5px #7bc1f7;
+	}
+	to {
+		box-shadow:0 0 10px #7bc1f7;
+	}
+}
+.textboxcool:focus { 
+    outline:none;
+    animation:myfirst12as 2s;
+	-moz-animation:myfirst12as 2s; /* Firefox */
+	-webkit-animation:myfirst12as 2s; /* Safari and Chrome */
+	-o-animation:myfirst12as 2s; /* Opera */
+	box-shadow:0 0 10px #7bc1f7;
+}
+@keyframes opacity_change
+{
+	from {
+		opacity: .3
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@-moz-keyframes opacity_change /* Firefox */
+{
+	from {
+		opacity: .3
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@-webkit-keyframes opacity_change /* Safari and Chrome */
+{
+	from {
+		opacity: .3
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@-o-keyframes opacity_change /* Opera */
+{
+	from {
+		opacity: .3
+	}
+	to {
+		opacity: 1
+	}
+}
+#Panel2 {
+    animation: opacity_change 2s;
+    -moz-animation: opacity_change 2s; /* Firefox */
+    -webkit-animation: opacity_change 2s; /* Safari and Chrome */
+    -o-animation: opacity_change 2s; /* Opera */
+}

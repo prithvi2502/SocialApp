@@ -1,0 +1,260 @@
+
+#hrtag
+{
+	display: block; height: 1px;
+    border: 0; border-top: 1px solid #0080C0;
+    margin: 0 auto; padding: 0;
+    width: 200px;
+}
+#textbox_cool
+{
+	width: 230px;
+	padding: 6px 4px;
+	border: 1px solid #e1e1e1;
+	margin-top: 3px;
+}
+.tile {
+	margin: 30px;
+	display: block;
+	float: left;
+	background-color: #525252;
+	width: 350px;
+	height: 250px;
+	box-shadow: inset 0px 0px 1px #FFFFCC;
+	text-decoration: none;
+	color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 20px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+}
+.tagleft
+{
+	float: right;
+	margin-right: 10px;
+}
+.grid_tiltle
+{
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 16pt;
+	text-transform: lowercase;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 30px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	color: #24A0DA;
+}
+.grid_super
+{
+
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 26pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 30px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+	color: #24A0DA;
+
+}
+.tile_search
+{
+	margin-left: 30px;
+	margin-top: 1px;
+	display: block;
+	float: left;
+	background-color: white;
+	width: inherit;
+	height: auto;
+    border: 1px solid #e1e1e1;
+	text-decoration: none;
+	color: black;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 20px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+}
+.tile_search:hover
+{
+	outline: 1px solid #ff8c01;
+}
+.image_holder
+{
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	float: left;
+}
+#content
+{
+	
+	float: left;
+	padding-left: 10px;
+}
+.links_link
+{
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+.links_link1
+{
+	color: black;
+	text-decoration: none;
+}
+.links_link:hover
+{
+	color: #438bc5;
+}
+.links_link1:hover
+{
+	color: #438bc5;
+}
+#topart1
+{
+	margin: 30px;
+	display: block;
+	width: 910px;
+	background-color: #525252;
+	box-shadow: inset 0px 0px 1px #FFFFCC;
+	text-decoration: none;
+	color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 5px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+}
+
+
+.first_part
+{
+	margin: 30px;
+	display: block;
+	width: 910px;
+	background-color: #525252;
+	box-shadow: inset 0px 0px 1px #FFFFCC;
+	text-decoration: none;
+	color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 5px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+}
+#mainlock
+{
+	margin: 30px;
+	display: block;
+	float: left;
+	background: #258dc8; /* Old browsers */
+background: -moz-linear-gradient(top, #258dc8 0%, #258dc8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#258dc8), color-stop(100%,#258dc8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #258dc8 0%,#258dc8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #258dc8 0%,#258dc8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #258dc8 0%,#258dc8 100%); /* IE10+ */
+background: linear-gradient(to bottom, #258dc8 0%,#258dc8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#258dc8',GradientType=0 ); /* IE6-9 */
+	width: 350px;
+	height: 150px;
+	box-shadow: inset 0px 0px 1px #FFFFCC;
+	text-decoration: none;
+	color: #ffffff;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+	letter-spacing: 0.02em;
+	line-height: 20px;
+	font-smooth: always;
+	padding: 20px;
+	overflow: hidden;
+	-webkit-font-smooth: always;
+	-moz-font-smooth: always;
+}
+.inputbox
+{
+	width: 300px;
+padding: 6px 4px;
+border: 1px solid #e1e1e1;
+margin-top: 3px;
+font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+font-weight: 300;
+font-size: 11pt;
+letter-spacing: 0.02em;
+}
+#textarea_input
+{
+	width: 300px;
+height: 100px;
+padding: 6px 4px;
+border: 1px solid #e1e1e1;
+margin-top: 3px;
+font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+font-weight: 300;
+font-size: 11pt;
+letter-spacing: 0.02em;
+}
+#gameicon {
+width: 100px;
+height: 100px;
+float: left;
+overflow: hidden;
+}
+#discription_game {
+width: 240px;
+float: right;
+margin-left: 3px;
+font-size: 11pt;
+}
+.text_field
+{
+
+padding: 6px 4px;
+border: none;
+margin-top: 3px;
+font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+font-weight: 300;
+font-size: 11pt;
+letter-spacing: 0.02em;
+background: none;
+color: white;
+}

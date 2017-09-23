@@ -1,0 +1,260 @@
+
+.manstuff
+{
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+.slider {
+    height: 282px;
+    width: 460px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+ 
+.slider img {
+    width: 460px;
+    height: 282px;
+    display: none;
+}
+#eventsbox
+{
+  width: 300px;
+  height: 300px;
+  background-color: #0093ff;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#Events_box
+{
+  width: 300px;
+  height: 100px;
+  background-color: #0093ff;
+}
+#event_head
+{
+  float: left;
+  color: white;
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+#content
+{
+  float: left;
+  padding-left:20px;
+  width:150px;
+  color: white;
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-size: 12px;
+  font-weight: bold;
+}
+#contentinfo
+{
+  margin: 0 auto;
+  width: 960px;
+  height: 500px;
+  background-color: #9e65c6;
+  margin-top: 400px;
+}
+#survey
+{
+  float: left;
+  margin-left: -580px;
+  margin-top: 30px;
+  width: 250px;
+  height: 450px;
+  color: white;
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-size: 14px;
+  font-weight: bold;
+  border-right: 3px solid white;
+}
+#namesurvey
+{
+  color:#6dcf22;
+  font-size: 20px;
+  text-align: middle;
+  font-smooth: always;
+}
+#options
+{
+  color: #33CCFF;
+  font-size: 14px;
+}
+#submitbutton1
+{
+  margin-left: 80px;
+  margin-top: 50px;
+  width: 90px;
+  height: 40px;
+  color: white;
+  border-color: orange;
+  border-width: 1px;
+   cursor: pointer;
+  -webkit-box-shadow: inset 0 1px 0 rgba(256, 256, 256, .1),0 1px 3px rgba(0, 0, 0, .5);
+box-shadow: inset 0 1px 0 rgba(256, 256, 256, .1),0 1px 3px rgba(0, 0, 0, .5);
+background: #ffa84c; /* Old browsers */
+background: -moz-linear-gradient(top, #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffa84c 0%,#ff7b0d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+
+}
+#submitbutton1:hover
+{
+  border-color: orange;
+    border-width: 1px;
+background: #ffa84c; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffa84c 0%, #ffa84c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ffa84c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffa84c 0%,#ffa84c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffa84c 0%,#ffa84c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffa84c 0%,#ffa84c 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffa84c 0%,#ffa84c 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ffa84c',GradientType=0 ); /* IE6-9 */
+
+}
+#submitbutton1:active
+{
+  border:  orange;
+  border-width: 0px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(256, 256, 256, .1),0 2px 4px rgba(0, 0, 0, .5);
+box-shadow: inset 0 1px 0 rgba(256, 256, 256, .1),0 2px 4px rgba(0, 0, 0, .5);
+  background: #ff7b0d; /* Old browsers */
+background: -moz-linear-gradient(top, #ff7b0d 0%, #ffa84c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7b0d), color-stop(100%,#ffa84c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ff7b0d 0%,#ffa84c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ff7b0d 0%,#ffa84c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ff7b0d 0%,#ffa84c 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ff7b0d 0%,#ffa84c 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b0d', endColorstr='#ffa84c',GradientType=0 ); /* IE6-9 */
+}
+#info
+{
+  float: left;
+  margin-left: -300px;
+  margin-top: 30px;
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-weight: bold;
+  color:#6dcf22;
+  font-size: 20px;
+}
+#discriptiontext
+{
+    font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-weight: bold;
+  color:white;
+  width: 600px;
+  font-size: 14px;
+}
+.nametag
+{
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-weight: bold;
+  color:#33CCFF;
+  font-size: 13px;
+  padding-top:8px;
+}
+.nameans
+{
+  color:white;
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-top:8px;
+}
+.nameans1
+{
+  color:white;
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 0px;
+  padding-top:8px;
+}
+#info1
+{
+  float: left;
+  margin-left: -300px;
+  margin-top: 106px;
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-weight: bold;
+  color:#6dcf22;
+  font-size: 20px;
+}
+#coolnesson
+{
+  margin: 0 auto;
+  width: 960px;
+  height: 500px;
+  background-color: #f26b00;
+  margin-top: -90px;
+}
+#title
+{
+  margin-top: 106px;
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-weight: bold;
+  color:white;
+  font-size: 20px;
+  padding: 20px;
+}
+#pannel
+{
+  margin: 0 auto;
+  width: 760px;
+  height: 350px;
+}
+#pannel1
+{
+  margin: 0 auto;
+  float: left;
+  width: 300px;
+  height: 350px;
+  border-right: 3px solid white;
+  text-align: center;
+}
+#paneel3
+{
+  margin: 0 auto;
+  width: 300px;
+  float: left;
+  height: 350px;
+  text-align: center;
+}
+#pannel_holder
+{
+  width:609px;
+  margin: 0 auto;
+}
+#link_vid
+{
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-weight: bold;
+  color:white;
+  font-size: 13px;
+  cursor: pointer;
+}
+#link_vid:hover
+{
+  text-decoration:underline;
+}
+#discription1
+{
+  font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+  font-weight: bold;
+  color:black;
+  font-size: 12px; 
+  padding: 20px;
+}

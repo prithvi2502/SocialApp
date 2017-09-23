@@ -1,0 +1,89 @@
+.eventbox
+{
+	height: 200px;
+	width: 300px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	background-color: #9e65c6;
+	cursor: pointer;
+	border: none;
+}
+.eventbox2
+{
+	height: 200px;
+	width: 300px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	background-color: #FF8C01;
+	cursor: pointer;
+	border: none;
+}
+.eventbox3
+{
+	height: 200px;
+	width: 300px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	background-color: #628be5;
+	cursor: pointer;
+	border: none;
+}
+.eventbox4
+{
+	height: 200px;
+	width: 300px;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	background-color: #0093ff;
+	cursor: pointer;
+	border: none;
+}
+.Fontsys1
+{
+  	font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+	padding-left: 20px;
+	padding-top: 20px;
+	text-transform: uppercase;
+}
+.Fontsys2
+{
+  	font-family: 'GeogrotesqueSemiBold', helvetica, arial;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	padding-left: 20px;
+	padding-top: 20px;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+.eventbox:hover
+{
+	border-width: 2px;
+	border-color: White;
+	border-syle: solid;
+}
+.eventbox2:hover
+{
+	border-width: 2px;
+	border-color: White;
+	border-style: solid;
+}
+.eventbox3:hover
+{
+	border-width: 2px;
+	border-color: White;
+	border-style: solid;
+}
+.eventbox4:hover
+{
+	border-width: 2px;
+	border-color: White;
+	border-style: solid;
+}
